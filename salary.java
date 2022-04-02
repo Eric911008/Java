@@ -30,7 +30,4 @@ public class salary
         System.out.println(w1.getHours() + "小時，收入");
         System.out.println(Salary + "元");
     }
-
-
 }
-

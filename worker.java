@@ -2,17 +2,34 @@ package com.company;
 
 public class worker
 {
-    public static void main(String [] args){
-        constructor w1 = new constructor();
+    private String name;
+    private hiredDate2 hireddate;
 
-        System.out.println("Name"+w1.getName());
-        System.out.println("hours"+w1.getHours());
+    public worker(){
+        setName("");
+    }
+    public void setName(String n){
+        name = n;
+    }
+    public String getName(){
+        return name;
+    }
 
-        constructor w2 = w1;
-        w2.setName("Mary");//w1也會跟著改變
-        w2.setHours(35);
-        System.out.println("Name"+w1.getName());
-        System.out.println("hours"+w1.getHours());
-
+    public void setHiredDate1(hiredDate2 hd){
+        hireddate = hd;
+    }
+    public void setHiredDate2(hiredDate2 hd){
+        hireddate = new hiredDate2();
+        hireddate.setYear(hd.getYear());
+        hireddate.setMonth(hd.getMonth());
+        hireddate.setDay(hd.getDay());
+    }
+    public void setHiredDate3(hiredDate2 hd){
+        hireddate.setYear(hd.getYear());
+        hireddate.setMonth(hd.getMonth());
+        hireddate.setDay(hd.getDay());
+    }
+    public hiredDate2 getHiredDate(){
+        return hireddate;
     }
 }
